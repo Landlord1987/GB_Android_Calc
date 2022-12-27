@@ -4,4 +4,5 @@
     <dimen name="number">28sp</dimen>
     <dimen name="cornerRadius">20dp</dimen>
     <dimen name="calc_number">50sp</dimen>
+    <dimen name="calc_number_land">20sp</dimen>
 </resources>

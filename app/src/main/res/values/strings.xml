@@ -19,4 +19,6 @@
     <string name="key_AC">AC</string>
     <string name="key_del">Del</string>
     <string name="key_Divide">/</string>
+    <string name="material_light">Light</string>
+    <string name="material_dark">Dark</string>
 </resources>

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="defaultMargin">16dp</dimen>
+    <dimen name="defaultMargin">8dp</dimen>
+    <dimen name="bottomMargin">4dp</dimen>
     <dimen name="number">28sp</dimen>
     <dimen name="cornerRadius">20dp</dimen>
     <dimen name="calc_number">50sp</dimen>
-    <dimen name="calc_number_land">20sp</dimen>
+    <dimen name="calc_number_land">16sp</dimen>
+    <dimen name="radioButton">12sp</dimen>
+    <dimen name="textSizeLand">32sp</dimen>
 </resources>

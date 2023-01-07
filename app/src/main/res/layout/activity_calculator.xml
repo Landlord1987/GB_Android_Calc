@@ -9,285 +9,198 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:alpha=".50"
-        android:contentDescription="@string/fon"
+        android:src="@drawable/boardwood"
+        android:alpha=".5"
         android:scaleType="fitXY"
-        android:src="@drawable/boardwood" />
+        />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/defaultMargin">
+        android:layout_margin="@dimen/defaultMargin"
+        >
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn0"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/key_0"
-            android:textSize="@dimen/number"
-            android:textStyle="bold"
-            app:cornerRadius="@dimen/cornerRadius"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
-            android:alpha=".5"
             app:layout_constraintBottom_toBottomOf="@id/btnDot"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="@id/btn2"
-            />
+            app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnDot"
+
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:insetLeft="@dimen/bottomMargin"
             android:text="@string/key_dot"
-            android:textSize="@dimen/number"
-            android:textStyle="bold"
-            app:cornerRadius="@dimen/cornerRadius"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
-            android:alpha=".5"
             app:layout_constraintBottom_toBottomOf="@id/btnEqually"
             app:layout_constraintEnd_toStartOf="@id/btnEqually"
-            app:layout_constraintStart_toEndOf="@id/btn0"/>
+            app:layout_constraintStart_toEndOf="@id/btn0" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnEqually"
+            android:insetLeft="@dimen/bottomMargin"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/key_Equally"
-            android:textSize="@dimen/number"
-            android:textStyle="bold"
-            app:cornerRadius="@dimen/cornerRadius"
-            android:textColor="@color/black"
-            android:backgroundTint="#F4A460"
-            android:alpha=".5"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/btnDot"/>
+            app:layout_constraintStart_toEndOf="@id/btnDot" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn1"
+
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:alpha=".5"
-            android:backgroundTint="@color/white"
             android:text="@string/key_1"
-            android:textColor="@color/black"
-            android:textSize="@dimen/number"
-            android:textStyle="bold"
-            app:cornerRadius="@dimen/cornerRadius"
             app:layout_constraintBottom_toTopOf="@id/btn0"
             app:layout_constraintEnd_toStartOf="@id/btn2"
-            app:layout_constraintStart_toStartOf="@id/btn0"/>
+            app:layout_constraintStart_toStartOf="@id/btn0" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn2"
+            android:insetLeft="@dimen/bottomMargin"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/key_2"
-            android:textSize="@dimen/number"
-            android:textStyle="bold"
-            app:cornerRadius="@dimen/cornerRadius"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
-            android:alpha=".5"
             app:layout_constraintBottom_toTopOf="@id/btnDot"
-            app:layout_constraintStart_toEndOf="@id/btn1"
-            app:layout_constraintEnd_toStartOf="@id/btn3"/>
+            app:layout_constraintEnd_toStartOf="@id/btn3"
+            app:layout_constraintStart_toEndOf="@id/btn1" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn3"
+            android:insetLeft="@dimen/bottomMargin"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/key_3"
-            android:textSize="@dimen/number"
-            android:textStyle="bold"
-            app:cornerRadius="@dimen/cornerRadius"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
-            android:alpha=".5"
             app:layout_constraintBottom_toBottomOf="@id/btn2"
-            app:layout_constraintStart_toEndOf="@id/btn2"
-            app:layout_constraintEnd_toStartOf="@id/btnPlus"/>
-        <Button
+            app:layout_constraintEnd_toStartOf="@id/btnPlus"
+            app:layout_constraintStart_toEndOf="@id/btn2" />
+
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnPlus"
+            android:insetLeft="@dimen/bottomMargin"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/key_plus"
-            android:textSize="@dimen/number"
-            android:textStyle="bold"
-            app:cornerRadius="@dimen/cornerRadius"
-            android:textColor="@color/black"
-            android:backgroundTint="#F4A460"
-            android:alpha=".5"
             app:layout_constraintBottom_toBottomOf="@id/btn3"
-            app:layout_constraintStart_toEndOf="@id/btn3"
-            app:layout_constraintEnd_toEndOf="@id/btnEqually"/>
+            app:layout_constraintEnd_toEndOf="@id/btnEqually"
+            app:layout_constraintStart_toEndOf="@id/btn3" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn4"
+
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:alpha=".5"
-            android:backgroundTint="@color/white"
             android:text="@string/key_4"
-            android:textColor="@color/black"
-            android:textSize="@dimen/number"
-            android:textStyle="bold"
-            app:cornerRadius="@dimen/cornerRadius"
             app:layout_constraintBottom_toTopOf="@id/btn1"
             app:layout_constraintEnd_toStartOf="@id/btn5"
             app:layout_constraintStart_toStartOf="@id/btn1" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn5"
+            android:insetLeft="@dimen/bottomMargin"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/key_5"
-            android:textSize="@dimen/number"
-            android:textStyle="bold"
-            app:cornerRadius="@dimen/cornerRadius"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
-            android:alpha=".5"
             app:layout_constraintBottom_toTopOf="@id/btn2"
-            app:layout_constraintStart_toEndOf="@id/btn4"
-            app:layout_constraintEnd_toStartOf="@id/btn6"/>
+            app:layout_constraintEnd_toStartOf="@id/btn6"
+            app:layout_constraintStart_toEndOf="@id/btn4" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn6"
+            android:insetLeft="@dimen/bottomMargin"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/key_6"
-            android:textSize="@dimen/number"
-            android:textStyle="bold"
-            app:cornerRadius="@dimen/cornerRadius"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
-            android:alpha=".5"
             app:layout_constraintBottom_toBottomOf="@id/btn5"
-            app:layout_constraintStart_toEndOf="@id/btn5"
-            app:layout_constraintEnd_toStartOf="@id/btnMinus"/>
-        <Button
+            app:layout_constraintEnd_toStartOf="@id/btnMinus"
+            app:layout_constraintStart_toEndOf="@id/btn5" />
+
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnMinus"
+            android:insetLeft="@dimen/bottomMargin"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/key_minus"
-            android:textSize="@dimen/number"
-            android:textStyle="bold"
-            app:cornerRadius="@dimen/cornerRadius"
-            android:textColor="@color/black"
-            android:backgroundTint="#F4A460"
-            android:alpha=".5"
             app:layout_constraintBottom_toBottomOf="@id/btn6"
+            app:layout_constraintEnd_toEndOf="@id/btnPlus"
             app:layout_constraintStart_toEndOf="@id/btn6"
-            app:layout_constraintEnd_toEndOf="@id/btnPlus"/>
+            tools:ignore="TextContrastCheck" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn7"
+
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:alpha=".5"
-            android:backgroundTint="@color/white"
             android:text="@string/key_7"
-            android:textColor="@color/black"
-            android:textSize="@dimen/number"
-            android:textStyle="bold"
-            app:cornerRadius="@dimen/cornerRadius"
             app:layout_constraintBottom_toTopOf="@id/btn4"
             app:layout_constraintEnd_toStartOf="@id/btn8"
             app:layout_constraintStart_toStartOf="@id/btn4" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn8"
+            android:insetLeft="@dimen/bottomMargin"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/key_8"
-            android:textSize="@dimen/number"
-            android:textStyle="bold"
-            app:cornerRadius="@dimen/cornerRadius"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
-            android:alpha=".5"
             app:layout_constraintBottom_toTopOf="@id/btn5"
-            app:layout_constraintStart_toEndOf="@id/btn7"
-            app:layout_constraintEnd_toStartOf="@id/btn9"/>
+            app:layout_constraintEnd_toStartOf="@id/btn9"
+            app:layout_constraintStart_toEndOf="@id/btn7" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn9"
+            android:insetLeft="@dimen/bottomMargin"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/key_9"
-            android:textSize="@dimen/number"
-            android:textStyle="bold"
-            app:cornerRadius="@dimen/cornerRadius"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
-            android:alpha=".5"
             app:layout_constraintBottom_toBottomOf="@id/btn8"
-            app:layout_constraintStart_toEndOf="@id/btn8"
-            app:layout_constraintEnd_toStartOf="@id/btnMult"/>
-        <Button
+            app:layout_constraintEnd_toStartOf="@id/btnMult"
+            app:layout_constraintStart_toEndOf="@id/btn8" />
+
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnMult"
+            android:insetLeft="@dimen/bottomMargin"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/key_mult"
-            android:textSize="@dimen/number"
-            android:textStyle="bold"
-            app:cornerRadius="@dimen/cornerRadius"
-            android:textColor="@color/black"
-            android:backgroundTint="#F4A460"
-            android:alpha=".5"
             app:layout_constraintBottom_toBottomOf="@id/btn9"
-            app:layout_constraintStart_toEndOf="@id/btn9"
-            app:layout_constraintEnd_toEndOf="@id/btnMinus"/>
+            app:layout_constraintEnd_toEndOf="@id/btnMinus"
+            app:layout_constraintStart_toEndOf="@id/btn9" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnAC"
+
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/key_AC"
-            android:textSize="@dimen/number"
-            android:textStyle="bold"
-            app:cornerRadius="@dimen/cornerRadius"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
-            android:alpha=".8"
-            app:layout_constraintBottom_toTopOf="@id/btn7"
             app:layout_constraintBottom_toBottomOf="@id/btnDel"
-            app:layout_constraintStart_toStartOf="@id/btn7"
+            app:layout_constraintBottom_toTopOf="@id/btn7"
             app:layout_constraintEnd_toEndOf="@id/btn8"
-            />
+            app:layout_constraintStart_toStartOf="@id/btn7" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnDel"
+            android:insetLeft="@dimen/bottomMargin"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/key_del"
-            android:textSize="@dimen/number"
-            android:textStyle="bold"
-            app:cornerRadius="@dimen/cornerRadius"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
-            android:alpha=".8"
             app:layout_constraintBottom_toBottomOf="@id/btnAC"
-            app:layout_constraintEnd_toStartOf="@id/btnEqually"
-            app:layout_constraintStart_toEndOf="@id/btnAC"/>
+            app:layout_constraintEnd_toStartOf="@id/btnDivide"
+            app:layout_constraintStart_toEndOf="@id/btnAC" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnDivide"
+            android:insetLeft="@dimen/bottomMargin"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/key_Divide"
-            android:textSize="@dimen/number"
-            android:textStyle="bold"
-            app:cornerRadius="@dimen/cornerRadius"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
-            android:alpha=".8"
             app:layout_constraintBottom_toBottomOf="@id/btnDel"
             app:layout_constraintEnd_toEndOf="@id/btnMult"
-            app:layout_constraintStart_toEndOf="@id/btnDel"/>
+            app:layout_constraintStart_toEndOf="@id/btnDel" />
 
         <TextView
             android:id="@+id/tv"
@@ -300,6 +213,34 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="2dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <RadioButton
+                android:id="@+id/radioLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/material_light"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="1dp"
+                android:textSize="@dimen/radioButton"/>
+
+            <RadioButton
+                android:id="@+id/radioDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/material_dark"
+                tools:layout_editor_absoluteX="125dp"
+                android:textSize="@dimen/radioButton"/>
+
+        </RadioGroup>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
